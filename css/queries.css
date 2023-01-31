@@ -1,0 +1,263 @@
+@media (max-width: 84em) {
+  .hero-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* 1200px */
+
+@media (max-width: 75em) {
+  .heading-primary {
+    color: #222;
+    font-weight: 400;
+    line-height: 1.3;
+    font-size: 4rem;
+    margin-bottom: 2.4rem;
+  }
+  .hero-description {
+    font-size: 1.6rem;
+    margin-bottom: 3.2rem;
+    line-height: 1.6;
+  }
+  .section-title {
+    font-size: 2.4rem;
+  }
+  .heading-description {
+    font-size: 1rem;
+  }
+}
+/* 944px Tablets */
+@media (max-width: 59em) {
+  .main-nav-list {
+    gap: 2.4rem;
+  }
+  .grid--3-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* BELOW 704px (Smaller tablets) */
+
+@media (max-width: 44em) {
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .main-nav-link .nav-cta {
+    font-size: 1.2rem;
+  }
+  .heading-primary {
+    color: #222;
+    font-weight: 400;
+    line-height: 1.3;
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+  .hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 3.2rem;
+    line-height: 1.6;
+  }
+  .mail {
+    width: 90%;
+    padding: 1.2rem 2.4rem;
+  }
+  .hero-mail-input {
+    width: 90%;
+  }
+  .delivered-imgs img {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .deliverd-text {
+    font-size: 1.8rem;
+  }
+  .deliverd-text span {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2.4rem;
+  }
+  .heading-description {
+    font-size: 1rem;
+  }
+  .marketing {
+    display: inline-block;
+  }
+  .marketing-img {
+    display: none;
+  }
+  .boxes {
+    gap: 2rem;
+  }
+  .features2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .features2-box h3 {
+    font-size: 2rem;
+  }
+  .features2-box p {
+    font-size: 1rem;
+  }
+  .features2-img img {
+    width: 30rem;
+  }
+  .videos {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .video2 {
+    height: 30rem;
+  }
+  #download .section-title {
+    width: 100%;
+  }
+  .testimonial {
+    flex-direction: column;
+    text-align: center;
+  }
+  .testimonial button {
+    display: none;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+  .main-nav-link ion-icon {
+    display: none;
+  }
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: #eef1f6;
+    color: #222;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    visibility: hidden;
+    z-index: 3;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/* BELOW 544px (Phones) */
+
+@media (max-width: 34em) {
+  .heading-description {
+    font-size: 1rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+  .title-info .button {
+    display: none;
+  }
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .read-more {
+    display: inline-flex;
+  }
+  .boxes {
+    flex-direction: column;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 1.8rem;
+    align-items: center;
+  }
+  .small-card {
+    width: 80%;
+  }
+  .icons {
+    display: none;
+  }
+  #download .heading-description {
+    width: 100%;
+  }
+  .app img {
+    width: 30%;
+  }
+  .testimonial {
+    padding: 4.8rem;
+  }
+  .sponser-cards {
+    gap: 3.6rem;
+  }
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .logo-col {
+    align-items: center;
+  }
+  .footer-list {
+    align-items: center;
+  }
+  .download-col {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .copyright {
+    text-align: center;
+    margin: 0;
+  }
+}
